@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixing JavaScript DOM</title>
+    <style>
+        body{
+            width:10000px;
+            height:1000px;
+        }
+    </style>
+</head>
+<body id="body">
+    <p id="g">gopo</p>
+    <a href="https://www.programiz.com/javascript/online-compiler/" class="b">one compiler</a>
+    <h1 class="l">gopi good morning</h1>
+    <h2 class="l">gopi good afternoon</h2>
+    <script>
+        let a = document.getElementById("g");
+        a.innerHTML = "gopi";
+        let x = document.getElementsByClassName("b")[0];
+        x.innerHTML = "ONECOMPILER";
+        let f = document.getElementsByClassName("l")[0];
+        f.innerHTML=n();
+        function n(){
+         console.log("cdf");
+         return "gopi it is good night";
+       }
+        let z=document.getElementById("body");
+        z.style.backgroundColor="green";
+        f.style.color="red";
+    </script>
+</body>
+</html>
